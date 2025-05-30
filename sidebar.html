@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Главная</title>
+    <title>Боковая панель</title>
     <style>
         b-example-divider{width:100%;height:3rem;background-color:#0000001a;border:solid
     rgba(0,0,0,.15);border-width:1px 0;box-shadow:inset 0 .5em 1.5em #0000001a,inset 0 .125em .5em
     #00000026}.b-example-vr{flex-shrink:0;width:1.5rem;height:100vh}.bi{vertical-align:-.125em;fill:currentColor}
     </style>
-    <link href="css/bootstrap.min.css" rel="stylesheet"/> <!-- Вызов css стилей -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
 </head>
 <body>
 <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
@@ -33,56 +33,53 @@
     </symbol>
 </svg>
 <div class="row"> <!-- Основной блок для работы с боковой панелью -->
-    <div class="col-2"> <!-- Колонка шириной 3/12 для размещения боковой панели -->
-        <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="height: 100vh;"><a href="/"
-                                                                                                 class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-            <svg class="bi pe-none me-2" width="40" height="32" aria-hidden="true">
-                <use xlink:href="#bootstrap"></use>
-            </svg>
-            <span class="fs-4">Меню</span></a>
-            <hr>
-            <ul class="nav nav-pills flex-column mb-auto">
-                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">
-                    <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
-                        <use xlink:href="#home"></use>
-                    </svg>
-                    Главная
-                </a></li>
-                <li><a href="#" class="nav-link">
-                    <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
-                        <use xlink:href="#table"></use>
-                    </svg>
-                    Категория
-                </a></li>
-                <li><a href="#" class="nav-link">
-                    <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
-                        <use xlink:href="#grid"></use>
-                    </svg>
-                    Заказы
-                </a></li>
-                <li><a href="#" class="nav-link">
-                    <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
-                        <use xlink:href="#people-circle"></use>
-                    </svg>
-                    Контакты
-                </a></li>
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 300px; height: 100vh;"><a href="/"
+                                                                                                           class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+        <svg class="bi pe-none me-2" width="40" height="32" aria-hidden="true">
+            <use xlink:href="#bootstrap"></use>
+        </svg>
+        <span class="fs-4">Меню</span></a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">
+                <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="#home"></use>
+                </svg>
+                Главная
+            </a></li>
+            <li><a href="#" class="nav-link">
+                <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="#table"></use>
+                </svg>
+                Категория
+            </a></li>
+            <li><a href="#" class="nav-link">
+                <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="#grid"></use>
+                </svg>
+                Заказы
+            </a></li>
+            <li><a href="#" class="nav-link">
+                <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="#people-circle"></use>
+                </svg>
+                Контакты
+            </a></li>
+        </ul>
+        <hr>
+        <div class="dropdown"><a href="#"
+                                 class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                                 data-bs-toggle="dropdown" aria-expanded="false"> <img
+                src="https://i.ebayimg.com/images/g/alwAAOSwLNVarr-L/s-l400.jpg"
+                alt="" width="32" height="32"
+                class="rounded-circle me-2">
+            <strong>Пользователь</strong></a>
+            <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                <li><a class="dropdown-item" href="#">Профиль</a></li>
+                <li><a class="dropdown-item" href="#">Выход</a></li>
             </ul>
-            <hr>
-            <div class="dropdown"><a href="#"
-                                     class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
-                                     data-bs-toggle="dropdown" aria-expanded="false"> <img
-                    src="https://i.ebayimg.com/images/g/alwAAOSwLNVarr-L/s-l400.jpg"
-                    alt="" width="32" height="32"
-                    class="rounded-circle me-2">
-                <strong>Пользователь</strong></a>
-                <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-                    <li><a class="dropdown-item" href="#">Профиль</a></li>
-                    <li><a class="dropdown-item" href="#">Выход</a></li>
-                </ul>
-            </div>
         </div>
     </div>
-    <div class="col-10"></div> <!-- Колонка шириной 9/12 для размещения основного контента -->
 </div>
 </body>
 <script src="js/bootstrap.bundle.min.js"></script>
