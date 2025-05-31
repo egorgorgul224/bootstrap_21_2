@@ -14,22 +14,15 @@ class MyServer(BaseHTTPRequestHandler):
 
     def do_GET(self):
         """Метод для обработки входящих GET-запросов"""
-        with open("main.html", "r", encoding="utf-8") as file:
-            data = file.read()
         # Отправка кода ответа
         self.send_response(200)
         # Отправка типа данных, который будет передаваться
         self.send_header("Content-type", "text/html")
         # Завершение формирования заголовков ответа
         self.end_headers()
-        try:
-            with open("main.html", "r", encoding="utf-8") as file:
-                data = file.read()
-            self.wfile.write(bytes(data, "utf-8"))
-        except FileNotFoundError:
-            # Обработка 404 ошибки
-            self.send_error(404, "File not found")
-
+        with open("main.html", "r", encoding="utf-8") as file:
+            data = file.read()
+        self.wfile.write(bytes(data, "utf-8"))
 
 if __name__ == "__main__":
     webServer = HTTPServer((hostName, serverPort), MyServer)

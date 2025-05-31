@@ -39,15 +39,21 @@ poetry install
 ```
 .
 ├── css
+├── js
 ├── src
 │ ├── __init__.py
 ├── tests - в папке находятся тесты для каждого модуля с классами
 │ ├── __init__.py
 ├── .flake8
 ├── .gitignore
+├── catalog.html
+├── category.html
+├── contacts.html
+├── main.html
 ├── main.py
 ├── pyproject.toml
 ├── poetry.lock
+├── sidebar.html
 └── README.md
 ```
 
